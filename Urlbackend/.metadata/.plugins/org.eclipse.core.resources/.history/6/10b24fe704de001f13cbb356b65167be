@@ -1,0 +1,5 @@
+package com.url.model;
+
+public class User {
+
+}

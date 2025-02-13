@@ -1,0 +1,34 @@
+package com.url.service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
+import com.url.model.User;
+import com.url.repository.UserRepository;
+
+import jakarta.transaction.Transactional;
+
+public class UserDetailsServiceImpl implements UserDetailsService{
+	
+	@Autowired
+	private UserRepository userRepository;
+
+	@Override
+	@Transactional
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		try {
+			
+		}catch() {
+			
+		}
+		User user=Optional.ofNullable(userRepository.findByUserName(username).orElseThrow(()->new UsernameNotFoundException("User is not found with this "+username)));
+		return new UserDetailsImpl(user);
+	}
+	
+	
+
+}

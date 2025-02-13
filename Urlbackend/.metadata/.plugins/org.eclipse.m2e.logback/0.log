@@ -1,0 +1,173 @@
+2025-01-29 10:38:48,997 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2025-01-29 10:39:35,675 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-01-29 10:40:03,565 [Worker-10: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-01-29 10:40:05,279 [Worker-10: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.url:UrlShortner:0.0.1-SNAPSHOT @ C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\pom.xml.
+2025-01-29 10:40:07,229 [Worker-10: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /UrlShortner/src/main/java
+2025-01-29 10:40:07,231 [Worker-10: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /UrlShortner/src/main/resources
+2025-01-29 10:40:07,237 [Worker-10: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /UrlShortner/src/main/resources
+2025-01-29 10:40:07,242 [Worker-10: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /UrlShortner/src/test/java
+2025-01-29 10:40:07,243 [Worker-10: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /UrlShortner/src/test/resources
+2025-01-29 10:40:08,246 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/postgresql/postgresql/42.7.5/postgresql-42.7.5-sources.jar
+2025-01-29 10:40:08,447 [Worker-10: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 2.00 sec, update config takes 2.00 sec 
+2025-01-29 10:40:08,513 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/postgresql/postgresql/42.7.5/postgresql-42.7.5-sources.jar
+2025-01-29 10:40:08,519 [Worker-9: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.postgresql:postgresql:42.7.5
+2025-01-29 10:40:08,641 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/3.48.3/checker-qual-3.48.3-sources.jar
+2025-01-29 10:40:08,764 [Worker-9: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/3.48.3/checker-qual-3.48.3-sources.jar
+2025-01-29 10:40:08,770 [Worker-9: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.checkerframework:checker-qual:3.48.3
+2025-01-29 10:40:09,301 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 10:40:09,319 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 10:40:09,324 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 11:17:33,591 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 11:17:33,618 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 11:17:33,627 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 11:20:11,625 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 11:20:11,633 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 11:20:11,636 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 11:20:41,468 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 11:20:41,474 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 11:20:41,477 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 11:21:27,443 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 11:21:27,448 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 11:21:27,451 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 11:21:43,007 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 11:21:43,022 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 11:21:43,025 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 11:32:26,527 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 11:32:26,534 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 11:32:26,537 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 11:36:46,188 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 11:36:46,194 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 11:36:46,195 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 11:36:48,390 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 11:36:48,401 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 11:36:48,403 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 11:38:20,015 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-12.0.15; built: 2024-11-05T19:44:57.623Z; git: 8281ae9740d4b4225e8166cc476bad237c70213a; jvm 21.0.5+11-LTS
+2025-01-29 11:38:20,086 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@74233f94{/help,/help,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@66ed244a{STARTED}}
+2025-01-29 11:38:20,086 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2025-01-29 11:38:20,122 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@686b391d{HTTP/1.1, (http/1.1)}{127.0.0.1:61934}
+2025-01-29 11:38:20,142 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@46d05926{STARTING}[12.0.15,sto=0] @3544557ms
+2025-01-29 11:38:36,070 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 11:38:36,080 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 11:38:36,083 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 11:38:50,010 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 11:38:50,017 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 11:38:50,020 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 11:40:29,397 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 11:40:29,405 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 11:40:29,408 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 11:44:07,585 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 11:44:07,592 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 11:44:07,594 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 12:30:10,279 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@46d05926{STOPPING}[12.0.15,sto=0]
+2025-01-29 12:30:10,301 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@686b391d{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2025-01-29 17:21:23,591 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-01-29 17:40:00,334 [Worker-6: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.url:UrlShortner:0.0.1-SNAPSHOT @ C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\pom.xml.
+2025-01-29 17:40:01,615 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 17:40:01,645 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 17:40:01,652 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 17:40:03,187 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 17:40:03,209 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 17:40:03,217 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 17:40:22,377 [Worker-10: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.url:UrlShortner:0.0.1-SNAPSHOT @ C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\pom.xml.
+2025-01-29 17:40:23,304 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 17:40:23,305 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 17:40:23,310 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 17:40:24,839 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 17:40:24,856 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 17:40:24,862 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 17:53:58,396 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 17:53:58,410 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 17:53:58,416 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 17:54:14,741 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-12.0.15; built: 2024-11-05T19:44:57.623Z; git: 8281ae9740d4b4225e8166cc476bad237c70213a; jvm 21.0.5+11-LTS
+2025-01-29 17:54:14,804 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@5584c1aa{/help,/help,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@3c0e2ad3{STARTED}}
+2025-01-29 17:54:14,805 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2025-01-29 17:54:14,845 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@24122a8d{HTTP/1.1, (http/1.1)}{127.0.0.1:50900}
+2025-01-29 17:54:14,866 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@76cfc253{STARTING}[12.0.15,sto=0] @1987264ms
+2025-01-29 18:08:29,454 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 18:08:29,465 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 18:08:29,471 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 18:11:57,894 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 18:11:57,903 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 18:11:57,908 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 18:20:56,730 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-29 18:20:56,745 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-29 18:20:56,751 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-29 21:14:58,749 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@76cfc253{STOPPING}[12.0.15,sto=0]
+2025-01-29 21:14:58,759 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@24122a8d{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2025-01-30 09:09:25,461 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-01-30 09:23:41,821 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-12.0.15; built: 2024-11-05T19:44:57.623Z; git: 8281ae9740d4b4225e8166cc476bad237c70213a; jvm 21.0.5+11-LTS
+2025-01-30 09:23:41,887 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started oeje8n.ContextHandler$CoreContextHandler@6c4405aa{/help,/help,b=null,a=AVAILABLE,h=oeje8n.ContextHandler$CoreContextHandler$CoreToNestedHandler@643c258a{STARTED}}
+2025-01-30 09:23:41,888 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
+2025-01-30 09:23:41,933 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@185039e6{HTTP/1.1, (http/1.1)}{127.0.0.1:56944}
+2025-01-30 09:23:41,954 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@5b8610db{STARTING}[12.0.15,sto=0] @878141ms
+2025-01-30 09:49:11,216 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 09:49:11,246 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-30 09:49:11,255 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 09:49:12,062 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 09:49:12,068 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-30 09:49:12,071 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 09:49:25,355 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-30 09:49:25,357 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 09:49:25,364 [Worker-15: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 09:51:22,683 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 09:51:22,698 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-30 09:51:22,704 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 09:51:38,872 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 09:51:38,880 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 09:51:38,883 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 10:08:36,926 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 10:08:36,941 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 10:08:36,950 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 10:11:02,858 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 10:11:02,871 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 10:11:02,876 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 10:15:16,195 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 10:15:16,209 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 10:15:16,215 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 10:15:43,795 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 10:15:43,812 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 10:15:43,819 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 10:17:49,810 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 10:17:49,820 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 10:17:49,824 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 10:36:46,910 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 10:36:47,030 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 10:36:47,046 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 11:13:54,407 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:13:54,417 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:13:54,424 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 11:14:38,774 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:14:38,784 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:14:38,787 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 11:21:52,881 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:21:52,893 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:21:52,900 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 11:23:28,000 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:23:28,011 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:23:28,015 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 11:23:52,030 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:23:52,039 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:23:52,043 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 11:28:37,181 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:28:37,188 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:28:37,191 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 11:28:58,719 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:28:58,797 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:28:58,807 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 11:37:07,577 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:37:07,587 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:37:07,592 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 11:49:57,952 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:49:57,965 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:49:57,971 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 11:51:26,824 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:51:26,830 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:51:26,834 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 11:51:33,214 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:51:33,220 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:51:33,225 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 11:53:57,177 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:53:57,185 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-30 11:53:57,188 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\KIIT0001\OneDrive\Desktop\url\UrlShortner\src\test\resources
+2025-01-30 11:54:51,614 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@5b8610db{STOPPING}[12.0.15,sto=0]
+2025-01-30 11:54:51,628 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@185039e6{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
