@@ -1,9 +1,11 @@
-import { BrowserRouter } from "react-router-dom";
-import { getApp } from "./utils/helper";
+import RoutesHub from "./RoutesHub";
 
 const App = () => {
-  const CurrentApp = getApp();
-  return <CurrentApp />;
+  return (
+    <>
+      <RoutesHub />
+    </>
+  );
 };
 
 export default App;

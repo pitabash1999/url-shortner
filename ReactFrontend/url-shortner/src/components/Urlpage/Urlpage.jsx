@@ -131,12 +131,12 @@ const Urlpage = () => {
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          href={`${import.meta.env.VITE_REACT_SUBDOMAIN}/${
+                          href={`${import.meta.env.VITE_REACT_SUBDOMAIN}/s/${
                             item.shortUrl
                           }`}
                           className="text-blue-600 dark:text-blue-400 hover:underline font-bold"
                         >
-                          {`${subDomain}/${item.shortUrl}`}
+                          {`${subDomain}/s/${item.shortUrl}`}
                         </a>
                       </p>
                     </div>
@@ -145,7 +145,7 @@ const Urlpage = () => {
                       <button
                         onClick={() =>
                           copyToClipboard(
-                            `${import.meta.env.VITE_REACT_SUBDOMAIN}/${
+                            `${import.meta.env.VITE_REACT_SUBDOMAIN}/s/${
                               item.shortUrl
                             }`
                           )

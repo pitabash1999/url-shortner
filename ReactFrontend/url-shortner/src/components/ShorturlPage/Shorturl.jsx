@@ -10,7 +10,11 @@ const Shorturl = () => {
     }
   }, [url]);
 
-  return null;
+  return (
+    <p className="m-0 p-0 flex justify-center items-center min-h-screen text-3xl dark:bg-slate-800 dark:text-white">
+      Rediercting...
+    </p>
+  );
 };
 
 export default Shorturl;
