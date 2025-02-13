@@ -33,8 +33,8 @@ const Login = () => {
       if (JSON.stringify(response.data.jwt) === undefined) {
         navigate("/signup");
       } else {
-        setToken(JSON.stringify(response.data.jwt));
         localStorage.setItem("JWT_TOKEN", JSON.stringify(response.data.jwt));
+        setToken(JSON.stringify(response.data.jwt));
 
         if (response.status === 200) {
           toast.success("welcome");

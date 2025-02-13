@@ -6,13 +6,7 @@ const Shorturl = () => {
 
   useEffect(() => {
     if (url) {
-      const apiUrl = import.meta.env.VITE_API_URL;
-      const redirectUrl = `${apiUrl}/${url}`;
-
-      console.log("Redirecting to:", redirectUrl);
-
-      // Redirect to the backend URL
-      window.location.href = redirectUrl;
+      window.location.href = import.meta.env.VITE_API_URL + `/${url}`;
     }
   }, [url]);
 

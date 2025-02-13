@@ -34,6 +34,7 @@ const Navbar = () => {
           <button onClick={toggleTheme}>
             {theme === "light" ? "🌚" : "🌞"}
           </button>
+
           <Link to="/">
             <button
               className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-400 transition duration-300 text-sm sm:text-base dark:bg-red-600 dark:hover:bg-red-500"

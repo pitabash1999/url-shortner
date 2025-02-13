@@ -1,40 +1,30 @@
 import { useContextApi } from "../../store/ContextProvider";
-
-import Loading from "../Loading";
-import toast from "react-hot-toast";
-import moment from "moment";
+import React, { useEffect } from "react";
 import { api } from "../../Baseurl/Baseurl";
 import { MdOutlineDelete } from "react-icons/md";
 import { MdOutlineContentCopy } from "react-icons/md";
+import moment from "moment";
+import Loading from "../Loading";
+import toast from "react-hot-toast";
 import Login from "../LoginPage/LogIn";
 
 const Urlpage = () => {
-  const { token, urls, load, setUrl, url, generateUrl, result, setUrls } =
-    useContextApi();
-
-  const handleUrlChange = (e) => {
-    setUrl(e.target.value.trim());
-  };
+  const {
+    token,
+    load,
+    setUrl,
+    url,
+    generateUrl,
+    setLoad,
+    setUrls,
+    handleDelete,
+    urls,
+    keyHandle, // Add this from context
+  } = useContextApi();
 
   const copyToClipboard = (text) => {
     navigator.clipboard.writeText(text);
     toast.success("URL copied to clipboard!");
-  };
-
-  //redirecting urls
-
-  //delete url
-  const handleDelete = async (id) => {
-    try {
-      setUrls((prevUrls) => prevUrls.filter((url) => url.id !== id));
-
-      const resp = await api.delete(`/api/url/deleteUrl/${id}`, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
-      console.log(resp);
-    } catch (e) {
-      console.log(e);
-    }
   };
 
   const subDomain = import.meta.env.VITE_REACT_SUBDOMAIN.replace(
@@ -42,39 +32,74 @@ const Urlpage = () => {
     ""
   );
 
+  useEffect(() => {
+    const fetchUrls = async () => {
+      try {
+        setLoad(true);
+        const response = await api.get("/api/url/myUrls", {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+
+        setUrls(
+          response.data.map((item) => ({
+            id: item.id,
+            originalUrl: item.originalUrl,
+            shortUrl: item.shortUrl,
+            creationTime: item.creationTime,
+          }))
+        );
+        setLoad(false);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    if (token) {
+      fetchUrls();
+    }
+  }, [token]);
+
+  const handleUrlChange = (e) => {
+    setUrl(e.target.value.trim());
+  };
+
   if (!token) return <Login />;
   if (load) return <Loading />;
 
-  if (token)
-    return (
-      <div className="min-h-screen bg-gradient-to-r from-blue-100 to-purple-100 dark:from-gray-900 dark:to-gray-800 flex flex-col items-center p-4 pt-20">
-        <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-8">
-          URL Shortener
-        </h1>
-        <div className="w-full max-w-screen-md mb-8">
-          <div className="flex flex-col sm:flex-row gap-2">
-            <input
-              type="text"
-              value={url}
-              onChange={handleUrlChange}
-              placeholder="Enter a URL"
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100"
-              required
-            />
-            <button
-              type="submit"
-              className="w-full sm:w-auto bg-blue-600 dark:bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-800 transition duration-300"
-              onClick={generateUrl}
-            >
-              Shorten
-            </button>
-          </div>
+  return (
+    <div className="min-h-screen bg-gradient-to-r from-blue-100 to-purple-100 dark:from-gray-900 dark:to-gray-800 flex flex-col items-center p-4 pt-20 ">
+      <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-8">
+        URL Shortener
+      </h1>
+      <div className="w-full max-w-screen-md mb-8">
+        <div className="flex flex-col sm:flex-row gap-2">
+          <input
+            type="text"
+            value={url}
+            onChange={handleUrlChange}
+            onKeyDown={(e) => {
+              if (e.code === "Enter") {
+                keyHandle();
+              }
+            }}
+            placeholder="Enter a URL"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100"
+            required
+          />
+          <button
+            type="submit"
+            className="w-full sm:w-auto bg-blue-600 dark:bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-800 transition duration-300"
+            onClick={generateUrl}
+          >
+            Shorten
+          </button>
         </div>
-
-        <div className="w-full max-w-screen-md mb-8">
+        <div className="w-full max-w-screen-md mb-8 mt-5">
           <h2 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">
             Existing URLs
           </h2>
+
+          {urls.length === 0 && <h2>No URLs are there...</h2>}
           <div className="h-screen overflow-y-auto">
             <div className="overflow-hidden">
               <ul className="space-y-2 flex flex-col-reverse">
@@ -143,7 +168,8 @@ const Urlpage = () => {
           </div>
         </div>
       </div>
-    );
+    </div>
+  );
 };
 
 export default Urlpage;

@@ -3,11 +3,7 @@ import { getApp } from "./utils/helper";
 
 const App = () => {
   const CurrentApp = getApp();
-  return (
-    <BrowserRouter>
-      <CurrentApp />
-    </BrowserRouter>
-  );
+  return <CurrentApp />;
 };
 
 export default App;

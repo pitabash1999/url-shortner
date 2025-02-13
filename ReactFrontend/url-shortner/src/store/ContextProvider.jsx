@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { api } from "../Baseurl/Baseurl";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 const ContextApi = createContext();
 
@@ -8,6 +9,8 @@ const ContextProvider = ({ children }) => {
   const [urls, setUrls] = useState([]);
   const [load, setLoad] = useState(false);
   const [url, setUrl] = useState("");
+
+  const navigate = useNavigate();
 
   //Theme controller
   const [theme, setTheme] = useState(
@@ -39,33 +42,46 @@ const ContextProvider = ({ children }) => {
     setToken(null);
   };
 
-  //Fetch urls
-  useEffect(() => {
-    const fetchUrls = async () => {
-      if (!token) return;
-      try {
-        setLoad(true);
-        const response = await api.get("/api/url/myUrls", {
-          headers: { Authorization: `Bearer ${token}` },
-        });
+  //delete url
+  const handleDelete = async (id) => {
+    try {
+      setUrls((prevUrls) => prevUrls.filter((url) => url.id !== id));
 
-        setUrls(
-          ...urls,
-          response.data.map((item) => ({
-            id: item.id,
-            originalUrl: item.originalUrl,
-            shortUrl: item.shortUrl,
-          }))
+      const resp = await api.delete(`/api/url/deleteUrl/${id}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  //generate urls (keydwon)
+  const keyHandle = async () => {
+    if (token && url) {
+      try {
+        const response = await api.post(
+          "/api/url/shortUrl",
+          { originalUrl: url },
+          { headers: { Authorization: `Bearer ${token}` } }
         );
+        setUrls([
+          ...urls,
+          {
+            id: response.data.id,
+            originalUrl: response.data.originalUrl,
+            shortUrl: response.data.shortUrl,
+            creationTime: response.data.creationTime,
+          },
+        ]);
+        setUrl("");
+        toast.success("URL shortened successfully!");
       } catch (error) {
-        toast.error("Failed to fetch URLs");
+        toast.error("Failed to shorten URL");
       } finally {
         setLoad(false);
       }
-    };
-
-    if (token) fetchUrls();
-  }, [token]);
+    }
+  };
 
   //generate urls
   async function generateUrl(e) {
@@ -90,6 +106,7 @@ const ContextProvider = ({ children }) => {
         setUrl("");
         toast.success("URL shortened successfully!");
       } catch (error) {
+        console.log(error);
         toast.error("Failed to shorten URL");
       } finally {
         setLoad(false);
@@ -111,6 +128,10 @@ const ContextProvider = ({ children }) => {
         setUrls,
         theme,
         toggleTheme,
+        setLoad,
+        handleDelete,
+
+        keyHandle,
       }}
     >
       {children}
